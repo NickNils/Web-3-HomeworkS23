@@ -394,6 +394,26 @@ footer > div {
 /* =============
     Search
 ============= */
+#search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+#search > div {
+  grid-area: header;
+}
+
 /* =============
     Whats new
 ============= */
+#whats-new {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: "... header ..." "body body body";
+}
+#whats-new #next {
+  grid-area: header;
+}
+#whats-new #gallery {
+  grid-area: body;
+}

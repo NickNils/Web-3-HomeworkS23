@@ -3,5 +3,16 @@
 ============= */
 
 #whats-new{
-    
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: 
+            "... header ..."
+            "body body body";
+
+    #next{
+        grid-area: header;
+    }
+    #gallery{
+        grid-area: body;
+    }
 }
