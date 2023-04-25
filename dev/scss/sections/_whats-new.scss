@@ -6,11 +6,11 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: 
-                    ".... content ...."
+                    ".... header ...."
                     "cards cards cards";
 
     >h1{
-        grid-area: content;
+        grid-area: header;
     }
     ul{
         grid-area: cards;

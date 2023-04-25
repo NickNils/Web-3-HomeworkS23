@@ -406,6 +406,16 @@ footer > div {
 /* =============
     Promos
 ============= */
+#promo aside {
+  display: grid;
+  background-color: green;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ".. content ...";
+}
+#promo aside div {
+  grid-area: content;
+}
+
 /* =============
     Search
 ============= */
@@ -424,10 +434,10 @@ footer > div {
 #whats-new {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ".... content ...." "cards cards cards";
+  grid-template-areas: ".... header ...." "cards cards cards";
 }
 #whats-new > h1 {
-  grid-area: content;
+  grid-area: header;
 }
 #whats-new ul {
   grid-area: cards;
