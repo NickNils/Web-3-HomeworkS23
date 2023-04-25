@@ -3,5 +3,16 @@
 ============= */
 
 #hero-1{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: 
+                    "hero hero hero"
+                    "... content ...";
 
+    >img{
+        grid-area: hero;
+    }
+    div{
+        grid-area: content;
+    }
 }

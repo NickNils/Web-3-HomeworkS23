@@ -385,6 +385,18 @@ footer > div {
 /* =============
     Hero 1
 ============= */
+#hero-1 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: "hero hero hero" "... content ...";
+}
+#hero-1 > img {
+  grid-area: hero;
+}
+#hero-1 div {
+  grid-area: content;
+}
+
 /* =============
     Hero 2
 ============= */
