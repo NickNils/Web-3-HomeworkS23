@@ -6,13 +6,26 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: 
-            "... header ..."
-            "body body body";
+                    ".... content ...."
+                    "cards cards cards";
 
-    #next{
-        grid-area: header;
+    >h1{
+        grid-area: content;
     }
-    #gallery{
-        grid-area: body;
+    ul{
+        grid-area: cards;
+    }
+    li{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: 
+                "image image image"
+                ".... text ....";
+        img{
+            grid-area: image;
+        }
+        div{
+            grid-area: text;
+        }
     }
 }

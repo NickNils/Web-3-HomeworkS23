@@ -331,6 +331,11 @@ template {
   width: 100%;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 /* =============
     Typography
 ============= */
@@ -385,15 +390,13 @@ footer > div {
 /* =============
     Hero 1
 ============= */
-#hero-1 {
+#hero-1 aside {
   display: grid;
+  background-color: red;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: "hero hero hero" "... content ...";
+  grid-template-areas: ".. content ...";
 }
-#hero-1 > img {
-  grid-area: hero;
-}
-#hero-1 div {
+#hero-1 aside div {
   grid-area: content;
 }
 
@@ -421,11 +424,22 @@ footer > div {
 #whats-new {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: "... header ..." "body body body";
+  grid-template-areas: ".... content ...." "cards cards cards";
 }
-#whats-new #next {
-  grid-area: header;
+#whats-new > h1 {
+  grid-area: content;
 }
-#whats-new #gallery {
-  grid-area: body;
+#whats-new ul {
+  grid-area: cards;
+}
+#whats-new li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: "image image image" ".... text ....";
+}
+#whats-new li img {
+  grid-area: image;
+}
+#whats-new li div {
+  grid-area: text;
 }
