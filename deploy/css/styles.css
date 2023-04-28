@@ -366,13 +366,13 @@ textarea {
 /* =============
     Header
 ============= */
-header {
+header #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+  grid-template-areas: ". logo-nav .";
 }
-header > div {
-  grid-area: header;
+header #logo-nav div {
+  grid-area: logo-nav;
 }
 
 /* =============
@@ -436,20 +436,20 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".... header ...." "cards cards cards";
 }
-#whats-new > h1 {
+#whats-new #title {
   grid-area: header;
 }
 #whats-new ul {
   grid-area: cards;
 }
-#whats-new li {
+#whats-new ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: "image image image" ".... text ....";
 }
-#whats-new li img {
+#whats-new ul li img {
   grid-area: image;
 }
-#whats-new li div {
+#whats-new ul li div {
   grid-area: text;
 }
