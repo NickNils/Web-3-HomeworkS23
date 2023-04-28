@@ -3,7 +3,7 @@
 ============= */
 
 #promo{
-    aside{
+    .promo-content{
         display: grid;
         background-color: green;
         grid-template-columns: 16px auto 16px;
@@ -12,6 +12,8 @@
 
         div{
             grid-area: content;
+            display: grid;
+            grid-template-columns: 60% auto;
         }
     }
 }
