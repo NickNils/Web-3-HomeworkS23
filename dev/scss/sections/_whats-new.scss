@@ -3,28 +3,18 @@
 ============= */
 
 #whats-new{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: 
-                    ".... header ...."
-                    "cards cards cards";
-
-    #title{
-        grid-area: header;
-    }
     ul{
-        grid-area: cards;
         li{
+            img{
+                width: 100%;
+            }
+            section{
             display: grid;
             grid-template-columns: 16px auto 16px;
-            grid-template-areas: 
-                    "image image image"
-                    ".... text ....";
-            img{
-                grid-area: image;
-            }
-            div{
-                grid-area: text;
+            grid-template-areas: ".... text ....";
+                div{
+                    grid-area: text;
+                }
             }
         }
     }

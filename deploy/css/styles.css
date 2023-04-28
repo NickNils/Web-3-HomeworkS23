@@ -433,25 +433,14 @@ footer > div {
 /* =============
     Whats new
 ============= */
-#whats-new {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ".... header ...." "cards cards cards";
-}
-#whats-new #title {
-  grid-area: header;
-}
-#whats-new ul {
-  grid-area: cards;
-}
-#whats-new ul li {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: "image image image" ".... text ....";
-}
 #whats-new ul li img {
-  grid-area: image;
+  width: 100%;
 }
-#whats-new ul li div {
+#whats-new ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ".... text ....";
+}
+#whats-new ul li section div {
   grid-area: text;
 }
