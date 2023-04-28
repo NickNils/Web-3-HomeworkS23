@@ -376,7 +376,7 @@ header #logo-nav {
     grid-template-columns: 48px auto 48px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   header #logo-nav {
     grid-template-columns: 64px auto 64px;
   }
@@ -400,13 +400,20 @@ footer > div {
 /* =============
     Hero 1
 ============= */
-#hero-1 aside {
+@media (min-width: 768px) {
+  #hero-1 div {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "c1 c2";
+  }
+}
+#hero-1 div aside {
   display: grid;
   background-color: red;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".. hero-content ...";
 }
-#hero-1 aside div {
+#hero-1 div aside div {
   grid-area: hero-content;
 }
 
