@@ -371,12 +371,7 @@ header #logo-nav {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
 }
-@media (min-width: 768px) {
-  header #logo-nav {
-    grid-template-columns: 48px auto 48px;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   header #logo-nav {
     grid-template-columns: 64px auto 64px;
   }
@@ -401,19 +396,24 @@ footer > div {
     Hero 1
 ============= */
 @media (min-width: 768px) {
-  #hero-1 div {
+  #hero-1 > div {
     display: grid;
     grid-template-columns: 40% auto;
     grid-template-areas: "c1 c2";
   }
 }
-#hero-1 div aside {
+@media (min-width: 768px) and (min-width: 1024px) {
+  #hero-1 > div {
+    grid-template-columns: 50% auto;
+  }
+}
+#hero-1 > div aside {
   display: grid;
   background-color: red;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".. hero-content ...";
 }
-#hero-1 div aside div {
+#hero-1 > div aside div {
   grid-area: hero-content;
 }
 
@@ -423,13 +423,32 @@ footer > div {
 /* =============
     Promos
 ============= */
-#promo .promo-content {
+@media (min-width: 768px) {
+  #promo {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". promo .";
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #promo {
+    grid-template-columns: auto 992px auto;
+  }
+}
+@media (min-width: 768px) {
+  #promo > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-area: promo;
+  }
+}
+#promo > div .promo-content {
   display: grid;
   background-color: green;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".. content ...";
 }
-#promo .promo-content div {
+#promo > div .promo-content div {
   grid-area: content;
   display: grid;
   grid-template-columns: 60% auto;
@@ -443,7 +462,7 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   #search {
     grid-template-columns: auto 992px auto;
   }

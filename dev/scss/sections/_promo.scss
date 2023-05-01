@@ -3,17 +3,35 @@
 ============= */
 
 #promo{
-    .promo-content{
+    
+    @include md{
         display: grid;
-        background-color: green;
         grid-template-columns: 16px auto 16px;
-        grid-template-areas: 
-                    ".. content ...";
+        grid-template-areas: ". promo .";
 
-        div{
-            grid-area: content;
+        @include lg{
+            grid-template-columns: auto 992px auto;
+        }
+    }
+    >div{
+        @include md{
             display: grid;
-            grid-template-columns: 60% auto;
+            grid-template-columns: 50% auto;
+            grid-area: promo;
+            
+
+        }
+        .promo-content{
+            display: grid;
+            background-color: green;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: 
+                        ".. content ...";
+            div{
+                grid-area: content;
+                display: grid;
+                grid-template-columns: 60% auto;
+            }
         }
     }
 }

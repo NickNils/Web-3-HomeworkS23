@@ -8,11 +8,7 @@ header{
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". logo-nav .";
 
-        @include md{
-            grid-template-columns: 48px auto 48px;
-        }
-
-        @include lg{
+        @include xxl{
             grid-template-columns: 64px auto 64px;
         }
         div{

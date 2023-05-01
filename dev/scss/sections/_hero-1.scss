@@ -3,11 +3,16 @@
 ============= */
 
 #hero-1{
-    div{
+    >div{
         @include md{
             display: grid;
             grid-template-columns: 40% auto;
             grid-template-areas: "c1 c2";
+        
+        @include lg{
+            grid-template-columns: 50% auto;
+
+        }
         }
         aside{
             display: grid;
