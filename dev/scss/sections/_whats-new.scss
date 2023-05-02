@@ -3,17 +3,62 @@
 ============= */
 
 #whats-new{
-    ul{
-        li{
-            img{
-                width: 100%;
-            }
-            section{
+    >div{
+
+        @include md{
             display: grid;
             grid-template-columns: 16px auto 16px;
-            grid-template-areas: ".... text ....";
-                div{
-                    grid-area: text;
+            grid-template-areas: ". gallery .";
+        }
+        ul{
+            display: grid;
+            gap: 16px;
+
+            @include md{
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                            "g1 g1 g2 g2"
+                            "g3 g3 g4 g4"
+                            ".. g5 g5 ..";
+                grid-area: gallery;
+            }
+            li{
+                img{
+                    width: 100%;
+                }
+                section{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ".... text ....";
+                    div{
+                        grid-area: text;
+                    }
+                }
+            }
+
+            #g1{
+                @include md{
+                    grid-area: g1;
+                }
+            }
+            #g2{
+                @include md{
+                    grid-area: g2;
+                }
+            }
+            #g3{
+                @include md{
+                    grid-area: g3;
+                }
+            }
+            #g4{
+                @include md{
+                    grid-area: g4;
+                }
+            }
+            #g5{
+                @include md{
+                    grid-area: g5;
                 }
             }
         }

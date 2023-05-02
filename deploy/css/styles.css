@@ -399,7 +399,6 @@ footer > div {
   #hero-1 > div {
     display: grid;
     grid-template-columns: 40% auto;
-    grid-template-areas: "c1 c2";
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
@@ -474,14 +473,57 @@ footer > div {
 /* =============
     Whats new
 ============= */
-#whats-new ul li img {
+@media (min-width: 768px) {
+  #whats-new > div {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". gallery .";
+  }
+}
+#whats-new > div ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #whats-new > div ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4" ".. g5 g5 ..";
+    grid-area: gallery;
+  }
+}
+#whats-new > div ul li img {
   width: 100%;
 }
-#whats-new ul li section {
+#whats-new > div ul li section {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".... text ....";
 }
-#whats-new ul li section div {
+#whats-new > div ul li section div {
   grid-area: text;
+}
+@media (min-width: 768px) {
+  #whats-new > div ul #g1 {
+    grid-area: g1;
+  }
+}
+@media (min-width: 768px) {
+  #whats-new > div ul #g2 {
+    grid-area: g2;
+  }
+}
+@media (min-width: 768px) {
+  #whats-new > div ul #g3 {
+    grid-area: g3;
+  }
+}
+@media (min-width: 768px) {
+  #whats-new > div ul #g4 {
+    grid-area: g4;
+  }
+}
+@media (min-width: 768px) {
+  #whats-new > div ul #g5 {
+    grid-area: g5;
+  }
 }
