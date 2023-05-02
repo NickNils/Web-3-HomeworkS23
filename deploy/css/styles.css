@@ -388,6 +388,11 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
+@media (min-width: 1024px) {
+  footer {
+    grid-template-columns: auto 992px auto;
+  }
+}
 footer > div {
   grid-area: footer;
 }
@@ -396,6 +401,12 @@ footer > div {
     display: grid;
     grid-template-columns: 50% auto;
     grid-template-areas: "locations news-letter" "locations socials";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "locations  news-letter socials";
   }
 }
 @media (min-width: 768px) {
