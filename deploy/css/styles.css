@@ -391,6 +391,28 @@ footer {
 footer > div {
   grid-area: footer;
 }
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "locations news-letter" "locations socials";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #locations {
+    grid-area: locations;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #news-letter {
+    grid-area: news-letter;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #socials {
+    grid-area: socials;
+  }
+}
 
 /* =============
     Hero 1

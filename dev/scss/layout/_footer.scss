@@ -9,5 +9,29 @@ footer{
 
     >div{
         grid-area: footer;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+                        "locations news-letter"
+                        "locations socials";
+
+        }
+        #locations{
+            @include md{
+                grid-area: locations;
+            }
+        }
+        #news-letter{
+            @include md{
+                grid-area: news-letter;
+            }
+        }
+        #socials{
+            @include md{
+                grid-area: socials;
+            }
+        }
     }
 }

@@ -4,7 +4,6 @@
 
 #whats-new{
     >div{
-
         @include md{
             display: grid;
             grid-template-columns: 16px auto 16px;
@@ -35,7 +34,6 @@
                     }
                 }
             }
-
             #g1{
                 @include md{
                     grid-area: g1;
