@@ -538,6 +538,11 @@ footer > div {
     grid-template-areas: ". gallery .";
   }
 }
+@media (min-width: 1024px) {
+  #whats-new > div {
+    grid-template-columns: auto 992px auto;
+  }
+}
 #whats-new > div ul {
   display: grid;
   gap: 16px;
@@ -546,6 +551,13 @@ footer > div {
   #whats-new > div ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "g1 g1 g2 g2" "g3 g3 g4 g4" ".. g5 g5 ..";
+    grid-area: gallery;
+  }
+}
+@media (min-width: 1024px) {
+  #whats-new > div ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "g1 g1 g2 g2 g3 g3" ".. g4 g4 g5 g5 ..";
     grid-area: gallery;
   }
 }
