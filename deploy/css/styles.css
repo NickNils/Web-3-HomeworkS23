@@ -434,13 +434,49 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".. hero-content ...";
 }
-#hero-1 > div aside div {
+@media (min-width: 1024px) {
+  #hero-1 > div #c1 {
+    grid-template-columns: auto 480px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-1 > div #c2 {
+    grid-template-columns: 16px 480px auto;
+  }
+}
+#hero-1 > div div {
   grid-area: hero-content;
 }
 
 /* =============
     Hero 2
 ============= */
+@media (min-width: 768px) {
+  #hero-2 ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "tree man" "tree oil";
+  }
+}
+#hero-2 ul #tree {
+  max-height: 100%;
+}
+@media (min-width: 768px) {
+  #hero-2 ul #tree {
+    grid-area: tree;
+  }
+}
+@media (min-width: 768px) {
+  #hero-2 ul #man {
+    grid-area: man;
+  }
+}
+@media (min-width: 768px) {
+  #hero-2 ul #oil {
+    grid-area: oil;
+  }
+}
+
 /* =============
     Promos
 ============= */
