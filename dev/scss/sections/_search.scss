@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search .";
+    padding: 16px 0px;
 
     @include lg{
         grid-template-columns: auto 992px auto;
@@ -13,5 +14,16 @@
 
     >div{
         grid-area: search;
+        form{
+            input{
+                border-bottom: solid;
+            }
+            button{
+                background-color: var(--orange);
+                padding: 6px 10px;
+                border: none;
+                border-radius: 4px;
+            }
+        }
     }
 }

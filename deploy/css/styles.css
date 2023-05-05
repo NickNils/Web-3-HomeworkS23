@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --green: #1A2C05;
+  --orange: #F48B10;
+  --dark-orange: #D97806;
+  --off-white: #F6F6F0;
+  --grey: #AFA598;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -336,6 +341,10 @@ ul {
   padding: 0;
 }
 
+input {
+  border: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -366,6 +375,10 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: var(--green);
+  padding: 16px 0px;
+}
 header #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -529,6 +542,7 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". search .";
+  padding: 16px 0px;
 }
 @media (min-width: 1024px) {
   #search {
@@ -537,6 +551,15 @@ footer > div {
 }
 #search > div {
   grid-area: search;
+}
+#search > div form input {
+  border-bottom: solid;
+}
+#search > div form button {
+  background-color: var(--orange);
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
 }
 
 /* =============
