@@ -546,8 +546,8 @@ footer > div {
 }
 #promo > div .promo-content div {
   grid-area: content;
-  display: grid;
-  grid-template-columns: 60% auto;
+  display: flex;
+  justify-content: space-between;
 }
 #promo > div .promo-content div section .promo-button {
   background-color: var(--orange);
