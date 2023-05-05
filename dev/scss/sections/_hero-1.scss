@@ -3,6 +3,7 @@
 ============= */
 
 #hero-1{
+    margin-bottom: 16px;
     >div{
         @include md{
             display: grid;
@@ -22,11 +23,13 @@
             }
 
         #c1{
+            background-color: var(--dark-orange);
             @include lg{
                 grid-template-columns: auto 480px 16px;
             }
         }
         #c2{
+            background-color: var(--orange);
             @include lg{
                 grid-template-columns: 16px 480px auto;
             }

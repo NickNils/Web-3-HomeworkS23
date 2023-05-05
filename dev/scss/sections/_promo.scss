@@ -14,8 +14,10 @@
         }
     }
     >div{
+        display: grid;
+        gap: 16px;
+
         @include md{
-            display: grid;
             grid-template-columns: 50% auto;
             grid-area: promo;
             
@@ -23,14 +25,24 @@
         }
         .promo-content{
             display: grid;
-            background-color: green;
+            background-color: var(--off-white);
             grid-template-columns: 16px auto 16px;
             grid-template-areas: 
                         ".. content ...";
+            padding: 16px 0px;
+            box-shadow: 0px 1px 1px var(--grey);
             div{
                 grid-area: content;
                 display: grid;
                 grid-template-columns: 60% auto;
+
+                section{
+                    .promo-button{
+                        background-color: var(--orange);
+                        text-decoration: none;
+                        padding: 4px 12px;
+                    }
+                }
             }
         }
     }
