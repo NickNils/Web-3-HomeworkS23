@@ -8,6 +8,20 @@ footer{
     grid-template-areas: ". footer .";
     background-color: var(--green);
 
+    h1{
+        color: var(--off-white);
+    }
+    p{
+        color: var(--off-white);
+    }
+    h2{
+        color: var(--off-white);
+    }
+    button{
+        color: var(--off-white);
+    }
+
+
     @include lg{
         grid-template-columns: auto 992px auto;
     }
@@ -29,21 +43,42 @@ footer{
         }
 
         #locations{
+            i{
+                color: var(--orange);
+            }
             @include md{
                 grid-area: locations;
             }
         }
         #news-letter{
+            form{
+                input{
+                    width: 100%;
+                    padding: 16px 12px;
+                    border-radius: 0px;
+                }
+                button{
+                    background-color: var(--orange);
+                    border: none;
+                }
+            }
             @include md{
                 grid-area: news-letter;
             }
         }
         #socials{
+            i{
+                color: var(--off-white);
+            }
             div{
                 display: flex;
-                align-items: flex-end;
+                align-items: flex-start;
                 flex-direction: column;
                 gap: 16px;
+
+                @include lg{
+                    align-items: flex-end;
+                }
 
                 h1{
                     margin: 0px;

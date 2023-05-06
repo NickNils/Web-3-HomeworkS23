@@ -402,6 +402,18 @@ footer {
   grid-template-areas: ". footer .";
   background-color: var(--green);
 }
+footer h1 {
+  color: var(--off-white);
+}
+footer p {
+  color: var(--off-white);
+}
+footer h2 {
+  color: var(--off-white);
+}
+footer button {
+  color: var(--off-white);
+}
 @media (min-width: 1024px) {
   footer {
     grid-template-columns: auto 992px auto;
@@ -423,21 +435,41 @@ footer > div {
     grid-template-areas: "locations  news-letter socials";
   }
 }
+footer > div #locations i {
+  color: var(--orange);
+}
 @media (min-width: 768px) {
   footer > div #locations {
     grid-area: locations;
   }
+}
+footer > div #news-letter form input {
+  width: 100%;
+  padding: 16px 12px;
+  border-radius: 0px;
+}
+footer > div #news-letter form button {
+  background-color: var(--orange);
+  border: none;
 }
 @media (min-width: 768px) {
   footer > div #news-letter {
     grid-area: news-letter;
   }
 }
+footer > div #socials i {
+  color: var(--off-white);
+}
 footer > div #socials div {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
   gap: 16px;
+}
+@media (min-width: 1024px) {
+  footer > div #socials div {
+    align-items: flex-end;
+  }
 }
 footer > div #socials div h1 {
   margin: 0px;
