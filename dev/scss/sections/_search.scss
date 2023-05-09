@@ -15,8 +15,12 @@
     >div{
         grid-area: search;
         form{
+            display: flex;
+            gap: 8px;
             input{
-                border-bottom: solid;
+                border-bottom: 1px solid var(--grey);
+                width: 100%;
+                background-color: transparent;
             }
             button{
                 background-color: var(--orange);

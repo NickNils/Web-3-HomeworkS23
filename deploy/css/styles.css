@@ -366,6 +366,11 @@ input {
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, p {
+  padding: 0px;
+  margin: 0px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -641,8 +646,14 @@ footer > div #socials div ul {
 #search > div {
   grid-area: search;
 }
+#search > div form {
+  display: flex;
+  gap: 8px;
+}
 #search > div form input {
-  border-bottom: solid;
+  border-bottom: 1px solid var(--grey);
+  width: 100%;
+  background-color: transparent;
 }
 #search > div form button {
   background-color: var(--orange);
