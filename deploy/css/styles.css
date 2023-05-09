@@ -466,6 +466,12 @@ footer > div #locations i {
     grid-area: locations;
   }
 }
+footer > div #news-letter form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
 footer > div #news-letter form input {
   width: 100%;
   padding: 16px 12px;
@@ -475,6 +481,7 @@ footer > div #news-letter form input {
 footer > div #news-letter form button {
   background-color: var(--orange);
   border: none;
+  padding: 12px 16px;
 }
 @media (min-width: 768px) {
   footer > div #news-letter {
