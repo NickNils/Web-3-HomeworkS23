@@ -3,6 +3,11 @@
 ============= */
 
 #whats-new{
+
+    #title{
+        margin-left: 16px;
+    }
+    
     >div{
         @include md{
             display: grid;
@@ -10,9 +15,32 @@
             grid-template-areas: ". gallery .";
         }
 
+        /* @include lg{
+            // grid-template-columns: auto 992px auto;
+            grid-template-columns: 5% auto 10%;
+        }
+
+        @include lg{
+            // grid-template-columns: auto 992px auto;
+            grid-template-columns: 10% auto 10%;
+        }
+
+        @include xl{
+            // grid-template-columns: auto 992px auto;
+            grid-template-columns: 15% auto 15%;
+        }
+
+        @include xxl{
+            grid-template-columns: auto 992px auto;
+            // grid-template-columns: 20% auto 10%;
+        } */
+
         @include lg{
             grid-template-columns: auto 992px auto;
         }
+
+
+
         ul{
             display: grid;
             gap: 16px;
@@ -46,6 +74,10 @@
                 grid-template-areas: ".... text ....";
                 padding: 16px 0px;
                     div{
+
+                        display: flex;
+                        flex-direction: column;
+                        align-content: space-between;
                         grid-area: text;
                         .read-more{
                             background-color: var(--orange);

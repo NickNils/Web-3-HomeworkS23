@@ -14,3 +14,19 @@ ul{
 input{
     border: none;
 }
+
+.show-at-large{
+    display: none;
+    
+    @include lg{
+        display: contents;
+    }
+}
+
+.show-at-med{
+    display: none;
+    
+    @include md{
+        display: contents;
+    }
+}
