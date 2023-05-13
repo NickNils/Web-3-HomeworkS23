@@ -6,6 +6,10 @@
 
     #title{
         margin-left: 16px;
+        font-weight: 300;
+        font-size: rem-calc(36);
+        line-height: 50px;
+        color: var(--grey);
     }
     
     >div{
@@ -79,10 +83,24 @@
                         flex-direction: column;
                         align-content: space-between;
                         grid-area: text;
+
+
                         .read-more{
                             background-color: var(--orange);
                             padding: 4px 12px;
                             text-decoration: none;
+                        }
+
+                        h1{
+                            font-weight: 600;
+                            font-size: rem-calc(27);
+                            line-height: 30px;
+                        }
+
+                        p{
+                            font-weight: 400;
+                            font-size: rem-calc(16);
+                            line-height: 20px;
                         }
                     }
                 }

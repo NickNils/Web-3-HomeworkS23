@@ -366,6 +366,21 @@ input {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--off-white);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+a:link:hover, a:link:active, a:visited:hover, a:visited:active {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5, p {
   padding: 0px;
   margin: 0px;
@@ -425,18 +440,6 @@ footer {
   grid-template-areas: ". footer .";
   background-color: var(--green);
 }
-footer h1 {
-  color: var(--off-white);
-}
-footer p {
-  color: var(--off-white);
-}
-footer h2 {
-  color: var(--off-white);
-}
-footer button {
-  color: var(--off-white);
-}
 @media (min-width: 1024px) {
   footer {
     grid-template-columns: auto 992px auto;
@@ -444,6 +447,30 @@ footer button {
 }
 footer > div {
   grid-area: footer;
+}
+footer > div h1 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 27px;
+  color: var(--off-white);
+}
+footer > div h2 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 22px;
+  color: var(--off-white);
+}
+footer > div p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: var(--off-white);
+}
+footer > div a {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 16px;
+  color: var(--off-white);
 }
 @media (min-width: 768px) {
   footer > div {
@@ -501,9 +528,6 @@ footer > div #socials div {
   footer > div #socials div {
     align-items: flex-end;
   }
-}
-footer > div #socials div h1 {
-  margin: 0px;
 }
 footer > div #socials div ul {
   display: flex;
@@ -674,6 +698,10 @@ footer > div #socials div ul {
 ============= */
 #whats-new #title {
   margin-left: 16px;
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 50px;
+  color: var(--grey);
 }
 #whats-new > div {
   /* @include lg{
@@ -749,6 +777,16 @@ footer > div #socials div ul {
   background-color: var(--orange);
   padding: 4px 12px;
   text-decoration: none;
+}
+#whats-new > div ul li section div h1 {
+  font-weight: 600;
+  font-size: 1.6875rem;
+  line-height: 30px;
+}
+#whats-new > div ul li section div p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
 }
 @media (min-width: 768px) {
   #whats-new > div ul #g1 {

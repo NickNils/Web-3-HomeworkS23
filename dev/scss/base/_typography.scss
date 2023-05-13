@@ -2,6 +2,22 @@
     Typography
 ============= */
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--off-white);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    &:hover, &:active{
+        text-decoration: none;
+    }
+}
+
 h1, h2, h3, h4, h5, p{
     padding: 0px;
     margin: 0px;
