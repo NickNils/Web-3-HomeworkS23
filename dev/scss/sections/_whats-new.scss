@@ -105,32 +105,55 @@
                     }
                 }
             }
+            .gallery-image{
+                height: 164px;
+                background-size: cover;
+                background-position: center;
+
+                @include md{
+                    height: 184px;
+                }
+
+                @include lg{
+                    height: 164px;
+                }
+            }
             #g1{
                 #i1{
                     background-image: url("../img/whats-new/gallery-1.jpg");
-                    height: 164px;
-                    background-size: cover;
                 }
                 @include md{
                     grid-area: g1;
                 }
             }
             #g2{
+                #i2{
+                    background-image: url("../img/whats-new/gallery-2.jpg");
+                }
                 @include md{
                     grid-area: g2;
                 }
             }
             #g3{
+                #i3{
+                    background-image: url("../img/whats-new/gallery-3.jpg");
+                }
                 @include md{
                     grid-area: g3;
                 }
             }
             #g4{
+                #i4{
+                    background-image: url("../img/whats-new/gallery-4.jpg");
+                }
                 @include md{
                     grid-area: g4;
                 }
             }
             #g5{
+                #i5{
+                    background-image: url("../img/whats-new/gallery-5.jpg");
+                }
                 @include md{
                     grid-area: g5;
                 }

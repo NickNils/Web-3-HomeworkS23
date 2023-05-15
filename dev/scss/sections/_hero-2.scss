@@ -12,20 +12,47 @@
                     "tree man"
                     "tree oil";
         }
+
+        @include lg{
+            grid-template-columns: 60% auto;
+        }
         #tree{
-            max-height: 100%;
+            background-image: url("../img/heroes/hero-2a.jpg");
+            height: 355px;
+            background-size: cover;
+            background-position: center;
+
             @include md{
                 grid-area: tree;
+                height: 594px;
+            }
+
+            @include xl{
+                height: 752px;
             }
         }
         #man{
+            background-image: url("../img/heroes/hero-2b.jpg");
+            height: 486px;
+            background-size: cover;
+            background-position: center;
+
             @include md{
                 grid-area: man;
+                height: 594px;
+            }
+
+            @include xl{
+                height: 376px;
             }
         }
         #oil{
-            @include md{
-                grid-area: oil;
+            background-image: url("../img/heroes/hero-2c.jpg");
+        
+            @include xl{
+                height: 376px;
+                background-size: cover;
+                background-position: center;
             }
         }
     }

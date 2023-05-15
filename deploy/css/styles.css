@@ -348,7 +348,7 @@ input {
 .show-at-large {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .show-at-large {
     display: contents;
   }
@@ -618,22 +618,53 @@ footer > div #socials div ul {
     grid-template-areas: "tree man" "tree oil";
   }
 }
+@media (min-width: 1024px) {
+  #hero-2 ul {
+    grid-template-columns: 60% auto;
+  }
+}
 #hero-2 ul #tree {
-  max-height: 100%;
+  background-image: url("../img/heroes/hero-2a.jpg");
+  height: 355px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #hero-2 ul #tree {
     grid-area: tree;
+    height: 594px;
   }
+}
+@media (min-width: 1200px) {
+  #hero-2 ul #tree {
+    height: 752px;
+  }
+}
+#hero-2 ul #man {
+  background-image: url("../img/heroes/hero-2b.jpg");
+  height: 486px;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px) {
   #hero-2 ul #man {
     grid-area: man;
+    height: 594px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  #hero-2 ul #man {
+    height: 376px;
+  }
+}
+#hero-2 ul #oil {
+  background-image: url("../img/heroes/hero-2c.jpg");
+}
+@media (min-width: 1200px) {
   #hero-2 ul #oil {
-    grid-area: oil;
+    height: 376px;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -809,30 +840,55 @@ footer > div #socials div ul {
   font-size: 1rem;
   line-height: 20px;
 }
-#whats-new > div ul #g1 #i1 {
-  background-image: url("../img/whats-new/gallery-1.jpg");
+#whats-new > div ul .gallery-image {
   height: 164px;
   background-size: cover;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  #whats-new > div ul .gallery-image {
+    height: 184px;
+  }
+}
+@media (min-width: 1024px) {
+  #whats-new > div ul .gallery-image {
+    height: 164px;
+  }
+}
+#whats-new > div ul #g1 #i1 {
+  background-image: url("../img/whats-new/gallery-1.jpg");
 }
 @media (min-width: 768px) {
   #whats-new > div ul #g1 {
     grid-area: g1;
   }
 }
+#whats-new > div ul #g2 #i2 {
+  background-image: url("../img/whats-new/gallery-2.jpg");
+}
 @media (min-width: 768px) {
   #whats-new > div ul #g2 {
     grid-area: g2;
   }
+}
+#whats-new > div ul #g3 #i3 {
+  background-image: url("../img/whats-new/gallery-3.jpg");
 }
 @media (min-width: 768px) {
   #whats-new > div ul #g3 {
     grid-area: g3;
   }
 }
+#whats-new > div ul #g4 #i4 {
+  background-image: url("../img/whats-new/gallery-4.jpg");
+}
 @media (min-width: 768px) {
   #whats-new > div ul #g4 {
     grid-area: g4;
   }
+}
+#whats-new > div ul #g5 #i5 {
+  background-image: url("../img/whats-new/gallery-5.jpg");
 }
 @media (min-width: 768px) {
   #whats-new > div ul #g5 {
