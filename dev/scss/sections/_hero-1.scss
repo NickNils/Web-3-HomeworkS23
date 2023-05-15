@@ -4,6 +4,22 @@
 
 #hero-1{
     margin-bottom: 16px;
+    #hero-image{
+        background-image: url("../img/heroes/hero-1.jpg");
+        background-size: cover;
+        height: 252px;
+
+        @include md{
+            height: 422px;
+            background-position: center -60px;
+        }
+        @include lg{
+            height: 560px;
+        }
+        @include xxl{
+            height: 847px;
+        }
+    }
     >div{
         @include md{
             display: grid;

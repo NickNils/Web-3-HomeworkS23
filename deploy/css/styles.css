@@ -547,6 +547,27 @@ footer > div #socials div ul {
 #hero-1 {
   margin-bottom: 16px;
 }
+#hero-1 #hero-image {
+  background-image: url("../img/heroes/hero-1.jpg");
+  background-size: cover;
+  height: 252px;
+}
+@media (min-width: 768px) {
+  #hero-1 #hero-image {
+    height: 422px;
+    background-position: center -60px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-1 #hero-image {
+    height: 560px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero-1 #hero-image {
+    height: 847px;
+  }
+}
 @media (min-width: 768px) {
   #hero-1 > div {
     display: grid;
