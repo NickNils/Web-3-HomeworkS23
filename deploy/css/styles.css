@@ -809,6 +809,11 @@ footer > div #socials div ul {
   font-size: 1rem;
   line-height: 20px;
 }
+#whats-new > div ul #g1 #i1 {
+  background-image: url("../img/whats-new/gallery-1.jpg");
+  height: 164px;
+  background-size: cover;
+}
 @media (min-width: 768px) {
   #whats-new > div ul #g1 {
     grid-area: g1;
