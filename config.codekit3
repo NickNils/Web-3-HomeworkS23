@@ -366,20 +366,20 @@
     },
     "\/deploy\/img\/heroes\/hero-1.jpg" : {
       "ft" : 16384,
-      "iS" : 834275,
+      "iS" : 277222,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero-1.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/img\/heroes\/hero-2a.jpg" : {
       "ft" : 16384,
-      "iS" : 465800,
+      "iS" : 87022,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero-2a.jpg",
@@ -392,7 +392,7 @@
     },
     "\/deploy\/img\/heroes\/hero-2b.jpg" : {
       "ft" : 16384,
-      "iS" : 270216,
+      "iS" : 82843,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero-2b.jpg",
@@ -405,7 +405,7 @@
     },
     "\/deploy\/img\/heroes\/hero-2c.jpg" : {
       "ft" : 16384,
-      "iS" : 174469,
+      "iS" : 31708,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/heroes\/hero-2c.jpg",
