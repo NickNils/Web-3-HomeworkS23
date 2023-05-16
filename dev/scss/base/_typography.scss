@@ -14,12 +14,13 @@ a:link, a:visited{
     font-size: 14px;
     line-height: 19px;
     padding: 4px 12px;
+    transition: 100ms;
  
 }
 a:hover{
     text-decoration: none;
     background-color: transparent;
-    border-color: var(--orange);
+    border: 2px solid var(--orange);
     color: var(--orange);
 }
 

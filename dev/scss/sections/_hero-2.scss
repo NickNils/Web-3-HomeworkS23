@@ -18,13 +18,16 @@
         @include md{
         display: grid;
         grid-template-columns: 50% auto;
-        grid-template-areas: 
-                    "tree man"
-                    "tree oil";
         }
 
         @include lg{
             grid-template-columns: 60% auto;
+        }
+
+        @include xl{
+            grid-template-areas: 
+                            "tree man"
+                            "tree oil";
         }
         #tree{
             background-image: url("../img/heroes/hero-2a.jpg");
@@ -33,11 +36,12 @@
             background-position: center;
 
             @include md{
-                grid-area: tree;
+
                 height: 594px;
             }
 
             @include xl{
+                grid-area: tree;
                 height: 752px;
             }
         }
@@ -48,18 +52,23 @@
             background-position: center;
 
             @include md{
-                grid-area: man;
+
                 height: 594px;
             }
 
             @include xl{
+                grid-area: man;
                 height: 376px;
             }
         }
         #oil{
+            display: none;
             background-image: url("../img/heroes/hero-2c.jpg");
+            background-size: cover;
+            background-position: top;
 
             @include xl{
+                display: list-item;
                 grid-area: oil;
                 height: 376px;
 
