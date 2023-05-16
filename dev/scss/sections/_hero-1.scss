@@ -48,6 +48,9 @@
             p{
                 font-size: rem-calc(16);
             }
+            a{
+                background-color: transparent;
+            }
 
             @include lg{
                 grid-template-columns: auto 480px 16px;

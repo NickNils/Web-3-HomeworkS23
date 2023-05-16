@@ -373,12 +373,18 @@ body {
 a:link, a:visited {
   text-decoration: none;
   color: var(--off-white);
+  background-color: var(--orange);
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  padding: 4px 12px;
 }
-a:link:hover, a:link:active, a:visited:hover, a:visited:active {
+
+a:hover {
   text-decoration: none;
+  background-color: transparent;
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 h1, h2, h3, h4, h5, p {
@@ -484,6 +490,23 @@ footer > div a {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "locations  news-letter socials";
   }
+}
+footer > div #locations ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer > div #locations ul li section {
+  display: flex;
+  gap: 8px;
+}
+footer > div #locations ul li .address {
+  padding-bottom: 8px;
+}
+footer > div #locations a {
+  background-color: transparent;
+  font-weight: 400;
+  padding: 0px;
 }
 footer > div #locations i {
   color: var(--orange);
@@ -598,6 +621,9 @@ footer > div #socials div ul li {
 }
 #hero-1 > div #c1 p {
   font-size: 1rem;
+}
+#hero-1 > div #c1 a {
+  background-color: transparent;
 }
 @media (min-width: 1024px) {
   #hero-1 > div #c1 {
@@ -761,11 +787,6 @@ footer > div #socials div ul li {
 #promo > div #p1 div section h1 {
   padding-bottom: 16px;
 }
-#promo > div #p1 div section .promo-button {
-  background-color: var(--orange);
-  text-decoration: none;
-  padding: 4px 12px;
-}
 #promo > div #p1 div aside #olives {
   background-image: url("../img/promo/visit.jpg");
   background-position: center bottom;
@@ -790,11 +811,6 @@ footer > div #socials div ul li {
 }
 #promo > div #p2 div section h1 {
   padding-bottom: 16px;
-}
-#promo > div #p2 div section .promo-button {
-  background-color: var(--orange);
-  text-decoration: none;
-  padding: 4px 12px;
 }
 
 /* =============
@@ -936,11 +952,6 @@ footer > div #socials div ul li {
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
-}
-#whats-new > div ul li .text .content aside .read-more {
-  background-color: var(--orange);
-  padding: 4px 12px;
-  text-decoration: none;
 }
 #whats-new > div ul .gallery-image {
   height: 164px;

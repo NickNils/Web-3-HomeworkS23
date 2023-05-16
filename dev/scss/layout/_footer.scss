@@ -56,6 +56,27 @@ footer{
         }
 
         #locations{
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                li{
+
+                    section{
+                        display: flex;
+                        gap: 8px;
+                    }
+                    .address{
+                        padding-bottom: 8px;
+                    }
+                }
+            }
+            a{
+                background-color: transparent;
+                font-weight: 400;
+                padding: 0px;
+            }
             i{
                 color: var(--orange);
             }

@@ -9,14 +9,18 @@ body{
 a:link, a:visited{
     text-decoration: none;
     color: var(--off-white);
+    background-color: var(--orange);
     font-weight: 600;
     font-size: 14px;
     line-height: 19px;
-
-    &:hover, &:active{
-        text-decoration: none;
-        
-    }
+    padding: 4px 12px;
+ 
+}
+a:hover{
+    text-decoration: none;
+    background-color: transparent;
+    border-color: var(--orange);
+    color: var(--orange);
 }
 
 h1, h2, h3, h4, h5, p{
