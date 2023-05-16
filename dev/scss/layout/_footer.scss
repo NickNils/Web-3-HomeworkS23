@@ -103,6 +103,10 @@ footer{
                     flex-direction: row;
                     gap: 24px;
                     margin: 0px;
+
+                    li{
+                        font-size: rem-calc(28);
+                    }
                 }
             }
 

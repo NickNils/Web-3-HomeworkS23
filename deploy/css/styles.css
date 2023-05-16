@@ -535,6 +535,9 @@ footer > div #socials div ul {
   gap: 24px;
   margin: 0px;
 }
+footer > div #socials div ul li {
+  font-size: 1.75rem;
+}
 @media (min-width: 768px) {
   footer > div #socials {
     grid-area: socials;
@@ -662,9 +665,8 @@ footer > div #socials div ul {
 }
 @media (min-width: 1200px) {
   #hero-2 ul #oil {
+    grid-area: oil;
     height: 376px;
-    background-size: cover;
-    background-position: center;
   }
 }
 
@@ -693,7 +695,7 @@ footer > div #socials div ul {
     grid-area: promo;
   }
 }
-#promo > div .promo-content {
+#promo > div #p1 {
   display: grid;
   background-color: var(--off-white);
   grid-template-columns: 16px auto 16px;
@@ -701,12 +703,38 @@ footer > div #socials div ul {
   padding: 16px 0px;
   box-shadow: 0px 1px 1px var(--grey);
 }
-#promo > div .promo-content div {
+#promo > div #p1 div {
   grid-area: content;
   display: flex;
   justify-content: space-between;
 }
-#promo > div .promo-content div section .promo-button {
+#promo > div #p1 div section .promo-button {
+  background-color: var(--orange);
+  text-decoration: none;
+  padding: 4px 12px;
+}
+#promo > div #p1 div aside #olives {
+  background-image: url("../img/promo/visit.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 100%;
+  border-radius: 50%;
+}
+#promo > div #p2 {
+  display: grid;
+  background-color: var(--off-white);
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ".. content ...";
+  padding: 16px 0px;
+  box-shadow: 0px 1px 1px var(--grey);
+}
+#promo > div #p2 div {
+  grid-area: content;
+  display: flex;
+  justify-content: space-between;
+}
+#promo > div #p2 div section .promo-button {
   background-color: var(--orange);
   text-decoration: none;
   padding: 4px 12px;
@@ -810,35 +838,34 @@ footer > div #socials div ul {
   background-color: var(--off-white);
   box-shadow: 0px 1px 1px var(--grey);
 }
-#whats-new > div ul li img {
-  width: 100%;
-}
-#whats-new > div ul li section {
+#whats-new > div ul li .text {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ".... text ....";
   padding: 16px 0px;
 }
-#whats-new > div ul li section div {
+#whats-new > div ul li .text .content {
+  height: 164px;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-between;
   grid-area: text;
 }
-#whats-new > div ul li section div .read-more {
-  background-color: var(--orange);
-  padding: 4px 12px;
-  text-decoration: none;
-}
-#whats-new > div ul li section div h1 {
+#whats-new > div ul li .text .content div h1 {
   font-weight: 600;
   font-size: 1.6875rem;
   line-height: 30px;
+  padding-bottom: 12px;
 }
-#whats-new > div ul li section div p {
+#whats-new > div ul li .text .content div p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 20px;
+}
+#whats-new > div ul li .text .content aside .read-more {
+  background-color: var(--orange);
+  padding: 4px 12px;
+  text-decoration: none;
 }
 #whats-new > div ul .gallery-image {
   height: 164px;

@@ -48,11 +48,11 @@
         }
         #oil{
             background-image: url("../img/heroes/hero-2c.jpg");
-        
+            
             @include xl{
+                grid-area: oil;
                 height: 376px;
-                background-size: cover;
-                background-position: center;
+
             }
         }
     }

@@ -69,38 +69,40 @@
             li{
                 background-color: var(--off-white);
                 box-shadow: 0px 1px 1px var(--grey);
-                img{
-                    width: 100%;
-                }
-                section{
+
+                .text{
                 display: grid;
                 grid-template-columns: 16px auto 16px;
                 grid-template-areas: ".... text ....";
                 padding: 16px 0px;
-                    div{
 
+                    .content{
+                        height: 164px; 
                         display: flex;
                         flex-direction: column;
-                        align-content: space-between;
+                        justify-content: space-between;
                         grid-area: text;
 
-
-                        .read-more{
-                            background-color: var(--orange);
-                            padding: 4px 12px;
-                            text-decoration: none;
+                        div{
+                            h1{
+                                font-weight: 600;
+                                font-size: rem-calc(27);
+                                line-height: 30px;
+                                padding-bottom: 12px;
+                            }
+    
+                            p{
+                                font-weight: 400;
+                                font-size: rem-calc(16);
+                                line-height: 20px;
+                            }
                         }
-
-                        h1{
-                            font-weight: 600;
-                            font-size: rem-calc(27);
-                            line-height: 30px;
-                        }
-
-                        p{
-                            font-weight: 400;
-                            font-size: rem-calc(16);
-                            line-height: 20px;
+                        aside{
+                            .read-more{
+                                background-color: var(--orange);
+                                padding: 4px 12px;
+                                text-decoration: none;
+                            }
                         }
                     }
                 }

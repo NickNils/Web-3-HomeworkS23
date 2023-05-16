@@ -23,7 +23,39 @@
             
 
         }
-        .promo-content{
+        #p1{
+            display: grid;
+            background-color: var(--off-white);
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: 
+                        ".. content ...";
+            padding: 16px 0px;
+            box-shadow: 0px 1px 1px var(--grey);
+            div{
+                grid-area: content;
+                display: flex;
+                justify-content: space-between;
+
+                section{
+                    .promo-button{
+                        background-color: var(--orange);
+                        text-decoration: none;
+                        padding: 4px 12px;
+                    }
+                }
+                aside{
+                    #olives{
+                        background-image: url("../img/promo/visit.jpg");
+                        background-position: center bottom;
+                        background-size: cover;
+                        width: 100%;
+                        padding-bottom: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        #p2{
             display: grid;
             background-color: var(--off-white);
             grid-template-columns: 16px auto 16px;
