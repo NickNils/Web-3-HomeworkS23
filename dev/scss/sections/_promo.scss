@@ -49,11 +49,12 @@
                     }
                 }
                 aside{
+                    display: block;
+                    width: 30%;
+                    background-size: cover;
+                    background-position: center bottom;
                     #olives{
                         background-image: url("../img/promo/visit.jpg");
-                        background-position: center bottom;
-                        background-size: cover;
-                        width: 100%;
                         padding-bottom: 100%;
                         border-radius: 50%;
                     }
@@ -77,6 +78,17 @@
                 section{
                     h1{
                         padding-bottom: 16px;
+                    }
+                }
+                aside{
+                    display: block;
+                    width: 30%;
+                    background-size: cover;
+                    background-position: center bottom;
+                    #olives{
+                        background-image: url("../img/promo/products.jpg");
+                        padding-bottom: 100%;
+                        border-radius: 50%;
                     }
                 }
             }
