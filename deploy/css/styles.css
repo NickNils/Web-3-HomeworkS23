@@ -802,10 +802,15 @@ footer > div #socials div ul li {
   background-size: cover;
   background-position: center bottom;
 }
+@media (min-width: 768px) {
+  #promo > div #p1 div aside {
+    width: 25%;
+  }
+}
 #promo > div #p1 div aside #olives {
   background-image: url("../img/promo/visit.jpg");
   padding-bottom: 100%;
-  border-radius: 50%;
+  border-radius: 100%;
 }
 #promo > div #p2 {
   display: grid;
@@ -828,9 +833,14 @@ footer > div #socials div ul li {
   display: block;
   width: 30%;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
 }
-#promo > div #p2 div aside #olives {
+@media (min-width: 768px) {
+  #promo > div #p2 div aside {
+    width: 25%;
+  }
+}
+#promo > div #p2 div aside #plant {
   background-image: url("../img/promo/products.jpg");
   padding-bottom: 100%;
   border-radius: 50%;

@@ -53,10 +53,14 @@
                     width: 30%;
                     background-size: cover;
                     background-position: center bottom;
+
+                    @include md{
+                        width: 25%;
+                    }
                     #olives{
                         background-image: url("../img/promo/visit.jpg");
                         padding-bottom: 100%;
-                        border-radius: 50%;
+                        border-radius: 100%;
                     }
                 }
             }
@@ -84,8 +88,12 @@
                     display: block;
                     width: 30%;
                     background-size: cover;
-                    background-position: center bottom;
-                    #olives{
+                    background-position: center;
+
+                    @include md{
+                        width: 25%;
+                    }
+                    #plant{
                         background-image: url("../img/promo/products.jpg");
                         padding-bottom: 100%;
                         border-radius: 50%;
