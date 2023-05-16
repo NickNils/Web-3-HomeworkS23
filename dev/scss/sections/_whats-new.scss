@@ -3,7 +3,16 @@
 ============= */
 
 #whats-new{
-
+    padding-bottom: 24px;
+    @include md{
+        padding-bottom: 32px;
+    }
+    @include lg{
+        padding-bottom: 56px;
+    }
+    @include xxl{
+        padding-bottom: 64px;
+    }
     #title{
         margin-left: 16px;
         font-weight: 300;

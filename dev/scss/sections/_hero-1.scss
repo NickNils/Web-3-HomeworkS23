@@ -4,6 +4,7 @@
 
 #hero-1{
     margin-bottom: 16px;
+    color: var(--white);
     #hero-image{
         background-image: url("../img/heroes/hero-1.jpg");
         background-size: cover;
@@ -39,12 +40,35 @@
 
         #c1{
             background-color: var(--dark-orange);
+            padding: 16px 0px;
+            h2{
+                font-size: rem-calc(20);
+                padding-bottom: 8px;
+            }
+            p{
+                font-size: rem-calc(16);
+            }
+
             @include lg{
                 grid-template-columns: auto 480px 16px;
             }
         }
         #c2{
             background-color: var(--orange);
+            padding: 16px 0px;
+            section{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                p{
+                    font-size: rem-calc(16);
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+
+
             @include lg{
                 grid-template-columns: 16px 480px auto;
             }

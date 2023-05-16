@@ -3,14 +3,20 @@
 ============= */
 
 #promo{
-    
+    padding-bottom: 24px;
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". promo .";
+        padding-bottom: 32px;
 
         @include lg{
             grid-template-columns: auto 992px auto;
+            padding-bottom: 56px;
+        }
+        @include xxl{
+            padding-bottom: 64px;
         }
     }
     >div{
@@ -35,8 +41,12 @@
                 grid-area: content;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
 
                 section{
+                    h1{
+                        padding-bottom: 16px;
+                    }
                     .promo-button{
                         background-color: var(--orange);
                         text-decoration: none;
@@ -67,8 +77,12 @@
                 grid-area: content;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
 
                 section{
+                    h1{
+                        padding-bottom: 16px;
+                    }
                     .promo-button{
                         background-color: var(--orange);
                         text-decoration: none;

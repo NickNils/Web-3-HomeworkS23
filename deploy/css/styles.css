@@ -549,6 +549,7 @@ footer > div #socials div ul li {
 ============= */
 #hero-1 {
   margin-bottom: 16px;
+  color: var(--white);
 }
 #hero-1 #hero-image {
   background-image: url("../img/heroes/hero-1.jpg");
@@ -589,6 +590,14 @@ footer > div #socials div ul li {
 }
 #hero-1 > div #c1 {
   background-color: var(--dark-orange);
+  padding: 16px 0px;
+}
+#hero-1 > div #c1 h2 {
+  font-size: 1.25rem;
+  padding-bottom: 8px;
+}
+#hero-1 > div #c1 p {
+  font-size: 1rem;
 }
 @media (min-width: 1024px) {
   #hero-1 > div #c1 {
@@ -597,6 +606,18 @@ footer > div #socials div ul li {
 }
 #hero-1 > div #c2 {
   background-color: var(--orange);
+  padding: 16px 0px;
+}
+#hero-1 > div #c2 section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#hero-1 > div #c2 section p {
+  font-size: 1rem;
+}
+#hero-1 > div #c2 section p span {
+  font-weight: 700;
 }
 @media (min-width: 1024px) {
   #hero-1 > div #c2 {
@@ -614,6 +635,24 @@ footer > div #socials div ul li {
 /* =============
     Hero 2
 ============= */
+#hero-2 {
+  padding-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #hero-2 {
+    padding-bottom: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero-2 {
+    padding-bottom: 44px;
+  }
+}
+@media (min-width: 1440px) {
+  #hero-2 {
+    padding-bottom: 48px;
+  }
+}
 @media (min-width: 768px) {
   #hero-2 ul {
     display: grid;
@@ -673,16 +712,26 @@ footer > div #socials div ul li {
 /* =============
     Promos
 ============= */
+#promo {
+  padding-bottom: 24px;
+}
 @media (min-width: 768px) {
   #promo {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". promo .";
+    padding-bottom: 32px;
   }
 }
 @media (min-width: 768px) and (min-width: 1024px) {
   #promo {
     grid-template-columns: auto 992px auto;
+    padding-bottom: 56px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  #promo {
+    padding-bottom: 64px;
   }
 }
 #promo > div {
@@ -707,6 +756,10 @@ footer > div #socials div ul li {
   grid-area: content;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+#promo > div #p1 div section h1 {
+  padding-bottom: 16px;
 }
 #promo > div #p1 div section .promo-button {
   background-color: var(--orange);
@@ -733,6 +786,10 @@ footer > div #socials div ul li {
   grid-area: content;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+#promo > div #p2 div section h1 {
+  padding-bottom: 16px;
 }
 #promo > div #p2 div section .promo-button {
   background-color: var(--orange);
@@ -776,6 +833,24 @@ footer > div #socials div ul li {
 /* =============
     Whats new
 ============= */
+#whats-new {
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #whats-new {
+    padding-bottom: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  #whats-new {
+    padding-bottom: 56px;
+  }
+}
+@media (min-width: 1440px) {
+  #whats-new {
+    padding-bottom: 64px;
+  }
+}
 #whats-new #title {
   margin-left: 16px;
   font-weight: 300;
