@@ -449,6 +449,7 @@ nav ul li {
   }
 }
 nav ul li a:link, nav ul li a:visited {
+  text-decoration: none;
   font-family: "Roboto", sans-serif;
   display: inline-block;
   color: black;
