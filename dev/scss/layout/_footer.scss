@@ -7,6 +7,7 @@ footer{
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
     background-color: var(--green);
+    padding: 92px;
 
     @include lg{
         grid-template-columns: auto 992px auto;
@@ -14,6 +15,7 @@ footer{
 
     >div{
         grid-area: footer;
+        display: inline-block;
 
         h1{
             font-weight: 600;

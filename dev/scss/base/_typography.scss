@@ -6,7 +6,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-a:link, a:visited{
+a.reg-button:link, a.reg-button:visited{
     text-decoration: none;
     color: var(--off-white);
     background-color: var(--orange);
@@ -17,7 +17,7 @@ a:link, a:visited{
     transition: 100ms;
  
 }
-a:hover{
+a.reg-button:hover{
     text-decoration: none;
     background-color: transparent;
     border: 2px solid var(--orange);
