@@ -4,6 +4,7 @@
 
 #whats-new{
     padding-bottom: 24px;
+    scroll-margin-top: 160px;
     @include md{
         padding-bottom: 32px;
     }
@@ -27,26 +28,6 @@
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". gallery .";
         }
-
-        /* @include lg{
-            // grid-template-columns: auto 992px auto;
-            grid-template-columns: 5% auto 10%;
-        }
-
-        @include lg{
-            // grid-template-columns: auto 992px auto;
-            grid-template-columns: 10% auto 10%;
-        }
-
-        @include xl{
-            // grid-template-columns: auto 992px auto;
-            grid-template-columns: 15% auto 15%;
-        }
-
-        @include xxl{
-            grid-template-columns: auto 992px auto;
-            // grid-template-columns: 20% auto 10%;
-        } */
 
         @include lg{
             grid-template-columns: auto 992px auto;

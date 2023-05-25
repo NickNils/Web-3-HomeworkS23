@@ -34,24 +34,23 @@ nav{
 
             a:link, a:visited{
                 text-decoration: none;
-                font-family: 'Roboto', sans-serif;
+                font-family: 'Open Sans', sans-serif;
                 display: inline-block;
-                color: black;
+                color: var(--green);
                 padding: 16px 0 16px;
-                font-weight: 500;
+                font-weight: 600;
 
                 @include lg{
                     padding: 24px 36px;
-                    border: 1px solid var(--gray);
-                    color: var(--gray);
                     border-radius: 6px;
                     transition: 0.25s;
                 }
 
                 &:hover, &:active{
                     @include lg{
-                        background-color: var(--gray);
-                        color: var(--white);
+                        color: var(--orange);
+                        border-bottom: 2px solid;
+                        border-radius: 0%;
                     }
                 }
             }
